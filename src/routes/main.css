@@ -1,0 +1,123 @@
+
+
+body {
+    background-color: rgb(65, 64, 64);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: myFont, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    font-size: 2vh;
+}
+
+.title {
+    font-size: 8vh;
+    background-color: rgb(146, 146, 228);
+    padding: 1vh;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 10px 0.5px;
+    margin: 1vh;
+}
+
+.welcome {
+    background-color: aliceblue;
+    padding: 1vh;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 20px 0.5px;
+    margin: 1vh;
+    font-size: 5vh;
+}
+
+.logout {
+    background-color: rgb(190, 143, 143);
+    border: none;
+    font-size: 4vh;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 20px 0.5px;
+    margin-top: 1vh;
+    padding: 1vh;
+    transition: all 300ms;
+}
+
+.logout:hover {
+    background-color: red;
+}
+
+.users {
+    background-color: rgb(233, 230, 230);
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    box-shadow: 0px 0px 10px 0.5px;
+    padding: 4vh;
+    box-shadow: 7px 7px 60px 1px;
+    font-size: 3vh;
+    border-radius: 1vh;
+    max-height: 70vh;
+    overflow-y: scroll;
+    width: fit-content;
+}
+
+.user {
+    margin-bottom: 2vh;
+    padding: 1vh;
+    box-shadow: 0px 0px 10px 0.5px;
+    border-radius: 0.5vh;
+    transition: all 350ms;
+    display: flex;
+    flex-direction: row;
+}
+
+.popup {
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(224, 224, 224);
+    top: inherit;
+    left: 54%;
+    max-width: 20vh;
+    word-break: normal;
+    transition: all 200ms;
+    padding: 1vh;
+    transform: translateY(-30%);
+}
+
+.user:hover {
+    box-shadow: 0px 0px 20px 1px;
+    border-radius: 2vh;
+}
+
+.user:hover .popup {
+    opacity: 1;
+    box-shadow: 0px 0px 10px 0.5px;
+    border-radius: 1vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px 1px;
+    padding: 3vh;
+    font-size: 5vh;
+    margin-top: 3vh;
+    border-radius: 1vh;
+}
+
+.interact {
+    margin-inline: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 10px 1px;
+    background-color: aliceblue;
+    padding: 1vh;
+    transition: all 300ms;
+}
+
+.interact:hover {
+    box-shadow: 0px 0px 20px 1px;
+}

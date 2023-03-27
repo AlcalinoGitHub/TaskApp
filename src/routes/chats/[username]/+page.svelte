@@ -23,6 +23,7 @@
     let ChatUsers = [username, chatUsername].sort()
 
     async function validateChat() {
+        if (chatUsername == username){return false}
         const {data, error} = await supabase
             .from('Users')
             .select('*')
@@ -33,7 +34,7 @@
 
     async function getChat() {
         let valid = await validateChat()
-        if (!valid){window.location.href = '/'}
+        if (!valid){window.location.href = '/chats/404'}
 
         const {data, error} = await supabase
             .from('chats')
@@ -66,6 +67,7 @@
 
     async function newMessage() {
         let message = document.getElementById('newMessage').value
+        if (message == ''){return}
         document.getElementById('newMessage').value = ''
         let db_data = await getChat()
         db_data = db_data.messages.slice()
@@ -127,14 +129,12 @@
         chatData.set(datos)
     }
 
-
-
 </script>
 
 <h1>Chat with {chatUsername}</h1>
 <button on:click={update} class = 'refresh'>reFresh</button>
 
-<div class = 'chat'>
+<div class = 'chat' id = 'chat'>
     {#each $chatData as message}
         {#if message.sender == username}
             <div class = 'own'> {message.sender}:<br>{message.text}</div>

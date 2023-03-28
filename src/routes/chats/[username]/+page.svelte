@@ -78,7 +78,6 @@
             date: (new Date()).toISOString(),
             id: `${message},${username},${(new Date).toISOString()}`
         }
-        let db_messages = []
         console.log(db_data)
         db_data.push(messageData)
 

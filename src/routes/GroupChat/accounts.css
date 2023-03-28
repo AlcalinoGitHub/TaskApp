@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: myFont, sans-serif;
+    background-color: rgb(65, 64, 64);
+}
+
+.title {
+    font-size: 7vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 10px 0.5px;
+    margin: 1vh;
+}
+
+.subtitle {
+    font-size: 3vh;
+    padding: 1vh;
+    border-radius: 2vh;
+    box-shadow: 0px 0px 10px 0.5px;
+    margin: 1vh;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    box-shadow: 5px 10px 40px 2px;
+    border-radius: 1vh;
+    margin-top: 10vh;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+    transition: all 250ms;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input:focus {
+    border: none;
+}
+
+.submit {
+    border-radius: 1vh;
+}
+
+.submit:hover {
+    box-shadow: 0px 0px 10px 1px green;
+}
+
+.failure {
+    opacity: 0;
+}
+
+.failureOn {
+    opacity: 1;
+    border-radius: 1vh;
+    padding: 1vh;
+    box-shadow: 0px 0px 10px 1px red;
+}
+
+.added {
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px;
+    margin: 1vh;
+    padding: 1vh;
+    transition: all 200ms;
+    border-radius: 1vh;
+}
+
+.added:hover {
+    box-shadow: 0px 0px 10px 1px red;
+}
+
+.toAdd{
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px;
+    margin: 1vh;
+    padding: 1vh;
+    transition: all 200ms;
+    border-radius: 1vh;
+}
+
+.toAdd:hover {
+    box-shadow: 0px 0px 10px 1px green;
+}
+
+.group {
+    background-color: white;
+    padding: 1vh;
+    font-size: 3vh;
+    border-radius: 1vh;
+    transition: all 200ms;
+    box-shadow: 0px 0px 10px 1px;
+    margin: 1vh;
+}
+
+.group:hover {
+    box-shadow: 0px 0px 40px 1px green;
+}
